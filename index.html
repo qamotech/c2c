@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crumb to Coin 🥐→🪙 — From Great Product to Real Revenue | Clark Essential Solutions</title>
+<meta name="description" content="Crumb to Coin is an interactive playbook app that walks a baker or food maker from one great recipe to a real food business in 9 stages. $19 launch price, one-time payment.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+<style>
+:root{--gold:#f5c542;--emerald:#10b981;--mint:#34d399;--ink:#050505;--card:#101312;--line:rgba(255,255,255,.12);--mut:#cbd5e1}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(600px 400px at 90% -5%,rgba(245,197,66,.16),transparent 65%),radial-gradient(600px 500px at -10% 55%,rgba(16,185,129,.13),transparent 65%)}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px 56px;position:relative}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 2px 6px}
+.brand{font-weight:900;letter-spacing:.4px;font-size:15px}
+.brand .g{color:var(--gold)}
+.pill{font-size:12px;font-weight:800;color:#04150e;background:linear-gradient(90deg,var(--gold),var(--mint));padding:7px 12px;border-radius:999px;white-space:nowrap}
+.hero{text-align:center;padding:34px 6px 8px}
+.hook1{font-size:19px;color:#e8e8e8;font-weight:600}
+.hook2{font-size:46px;font-weight:900;line-height:1.05;color:var(--gold);margin-top:6px;text-shadow:0 4px 26px rgba(245,197,66,.3)}
+.hook3{margin-top:12px;color:var(--mut);font-size:17px}
+.combo{font-size:74px;margin:20px 0 4px;animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+h1{font-size:42px;font-weight:900;letter-spacing:.5px}
+h1 .gold{color:var(--gold)} h1 .green{color:var(--mint)}
+.tagline{font-size:19px;font-weight:700;margin-top:6px}
+.sub{color:var(--mut);margin:14px auto 0;max-width:520px;font-size:16px}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:900;border-radius:999px;padding:17px 22px;font-size:19px;margin-top:16px;cursor:pointer;border:none;width:100%}
+.btn-gold{background:linear-gradient(90deg,var(--gold),#ffd968);color:#191200;box-shadow:0 8px 28px rgba(245,197,66,.35)}
+.btn-green{background:var(--emerald);color:#04150e;box-shadow:0 8px 28px rgba(16,185,129,.35)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid var(--line);box-shadow:none}
+.small{font-size:13px;color:#9ca3af;text-align:center;margin-top:10px}
+h2{font-size:26px;font-weight:900;margin:42px 0 6px}
+h2 .gold{color:var(--gold)} h2 .green{color:var(--mint)}
+.lede{color:var(--mut);font-size:15.5px}
+.stages{display:grid;gap:10px;margin-top:16px}
+.stage{display:flex;gap:13px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.num{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--emerald));color:#0a0f0c;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:17px}
+.stage b{font-size:17px;display:block}
+.stage span{color:var(--mut);font-size:14px}
+.feats{display:grid;gap:10px;margin-top:16px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;font-size:15.5px}
+.feat b{color:#fff}
+.price-card{margin-top:18px;border:3px solid var(--gold);border-radius:24px;padding:26px 22px;text-align:center;background:linear-gradient(135deg,rgba(245,197,66,.13),rgba(16,185,129,.11))}
+.price-lbl{letter-spacing:2px;font-weight:800;color:var(--mint);font-size:14px}
+.price-amt{font-size:64px;font-weight:900;color:var(--gold);line-height:1.1}
+.price-was{color:#9ca3af;font-size:17px}
+.price-was s{color:#f87171}
+.price-note{color:var(--mut);font-size:14.5px;margin-top:6px}
+.steps{display:grid;gap:12px;margin-top:16px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.step h3{font-size:18px;margin-bottom:4px}
+.step p{color:var(--mut);font-size:15px}
+#unlockPanel{display:none;margin-top:14px;border:2px solid var(--emerald);border-radius:18px;padding:18px;background:rgba(16,185,129,.08)}
+#unlockPanel.show{display:block;animation:pop .35s ease}
+@keyframes pop{from{transform:scale(.97);opacity:0}to{transform:scale(1);opacity:1}}
+#unlockPanel ol{margin:10px 0 4px 20px;color:#e5e7eb;font-size:15.5px}
+#unlockPanel li{margin:6px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:10px}
+summary{font-weight:800;cursor:pointer;font-size:16px}
+details p{color:var(--mut);font-size:15px;margin-top:8px}
+footer{margin-top:48px;text-align:center;color:#9ca3af;font-size:13.5px;border-top:1px solid var(--line);padding-top:22px}
+footer .fb{color:#fff;font-weight:900;font-size:15px}
+@media (max-width:420px){h1{font-size:33px}.hook2{font-size:40px}.combo{font-size:64px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">💎 CLARK <span class="g">ESSENTIAL SOLUTIONS</span></div>
+    <div class="pill">NEW PLAYBOOK</div>
+  </header>
+
+  <section class="hero">
+    <div class="hook1">People keep telling you to</div>
+    <div class="hook2">SELL THAT RECIPE…</div>
+    <div class="hook3">Compliments don't pay. A plan does.</div>
+    <div class="combo">🥐 ➜ 🪙</div>
+    <h1><span class="gold">CRUMB</span> TO <span class="green">COIN</span></h1>
+    <div class="tagline">From great product to real revenue.</div>
+    <p class="sub">An interactive playbook app that walks you from <b style="color:#fff">one great recipe</b> to a <b style="color:#fff">real food business</b> — in 9 stages, step by step, right on your phone.</p>
+    <a class="btn btn-gold" href="#get-started">🚀 Get Started — $19 Launch Price</a>
+    <div class="small">One-time payment · No subscription · Works on your phone</div>
+  </section>
+
+  <h2>📋 What you <span class="gold">get</span></h2>
+  <p class="lede">The full 9-stage playbook. Open a stage, work the checklist, check it off — the app tracks your progress for you.</p>
+  <div class="stages">
+    <div class="stage"><div class="num">1</div><div><b>Prove people will pay</b><span>Test your product with real buyers before you spend big.</span></div></div>
+    <div class="stage"><div class="num">2</div><div><b>Make it repeatable</b><span>Lock the recipe and process so every batch comes out right.</span></div></div>
+    <div class="stage"><div class="num">3</div><div><b>Know your numbers</b><span>Costs, pricing, and margins — know what you actually make.</span></div></div>
+    <div class="stage"><div class="num">4</div><div><b>Make it legal</b><span>Permits, cottage food rules, and the paperwork, in order.</span></div></div>
+    <div class="stage"><div class="num">5</div><div><b>Set up operations</b><span>Kitchen flow, supplies, and systems that don't fall apart.</span></div></div>
+    <div class="stage"><div class="num">6</div><div><b>Look like you belong</b><span>Branding and presentation that make buyers trust you.</span></div></div>
+    <div class="stage"><div class="num">7</div><div><b>Pick your channels</b><span>Markets, online, wholesale — choose where you'll sell.</span></div></div>
+    <div class="stage"><div class="num">8</div><div><b>Launch loud</b><span>A launch that actually gets attention, not crickets.</span></div></div>
+    <div class="stage"><div class="num">9</div><div><b>Systemize and grow</b><span>Turn a good start into a business that keeps growing.</span></div></div>
+  </div>
+  <div class="feats">
+    <div class="feat">✅ <b>Step-by-step checklists</b> inside every stage — no guessing what comes next</div>
+    <div class="feat">⚠️ <b>Pitfalls to avoid</b> flagged along the way, before they cost you money</div>
+    <div class="feat">🔗 <b>Free resources built in</b> — including SCORE mentoring and SBA guidance</div>
+    <div class="feat">📈 <b>Progress tracking</b> — pick up right where you left off</div>
+  </div>
+
+  <h2>👩🏾‍🍳 Who it's <span class="green">for</span></h2>
+  <div class="feats">
+    <div class="feat">🥐 Home bakers whose friends and family keep saying <b>"you should sell this"</b></div>
+    <div class="feat">🍰 Cottage food makers ready to go from side sales to a real business</div>
+    <div class="feat">🧁 Food makers with a great product and no roadmap for what to do next</div>
+  </div>
+
+  <h2>💲 Simple <span class="gold">pricing</span></h2>
+  <div class="price-card">
+    <div class="price-lbl">🚀 LAUNCH PRICE</div>
+    <div class="price-amt">$19</div>
+    <div class="price-was">Regular price <s>$29</s> after launch</div>
+    <div class="price-note">One-time payment. No subscription, no tiers — the complete 9-stage playbook.</div>
+  </div>
+
+  <h2 id="get-started">🚀 Get <span class="green">started</span> — 3 steps</h2>
+  <div class="steps">
+    <div class="step">
+      <h3>Step 1 — Pay $19</h3>
+      <p>Tap the button to pay securely through PayPal. It opens PayPal with the $19 launch price already set.</p>
+      <!-- PAYMENT LINK: to switch to a real PayPal Payment Link later, change ONLY the href on the next line. -->
+      <a class="btn btn-gold" href="https://www.paypal.me/CFProjects/19USD" target="_blank" rel="noopener">💳 Pay $19 with PayPal</a>
+    </div>
+    <div class="step">
+      <h3>Step 2 — Unlock your playbook</h3>
+      <p>After you've paid, come back to this page and tap the unlock button.</p>
+      <button class="btn btn-green" id="unlockBtn" type="button">✅ I've Paid — Unlock My Playbook</button>
+      <div id="unlockPanel">
+        <h3>🎉 You're in! Quick start:</h3>
+        <ol>
+          <li>Tap <b>Open My Playbook</b> below — it opens right in your browser.</li>
+          <li>Start at <b>Stage 1: Prove people will pay</b> and work the checklist.</li>
+          <li>Check off steps as you finish them — your progress is tracked for you.</li>
+          <li>Bookmark the playbook page so you can come back anytime.</li>
+        </ol>
+        <a class="btn btn-gold" href="crumb2coin-app.html">🥐 Open My Playbook →</a>
+      </div>
+    </div>
+    <div class="step">
+      <h3>Step 3 — Launch your first stage</h3>
+      <p>Don't try to do all 9 stages in a day. Open Stage 1, finish its first checklist item, and you're officially in business-building mode.</p>
+    </div>
+  </div>
+
+  <h2>❓ Questions</h2>
+  <details>
+    <summary>What happens after I pay?</summary>
+    <p>Come back to this page and tap “I've Paid — Unlock My Playbook” in Step 2 above. Your playbook opens right away, with quick-start steps to get you into Stage 1.</p>
+  </details>
+  <details>
+    <summary>Is it phone-friendly?</summary>
+    <p>Yes — Crumb to Coin was built phone-first. It opens in your mobile browser, no app store download and no install needed.</p>
+  </details>
+  <details>
+    <summary>Is this a subscription?</summary>
+    <p>No. It's a one-time $19 launch payment (regular price $29 after launch). Pay once, and the playbook is yours to work through at your own pace.</p>
+  </details>
+  <details>
+    <summary>What exactly is inside?</summary>
+    <p>9 stages — from proving people will pay, to making it legal, to launching loud and growing — each with step-by-step checklists, pitfalls to avoid, free resources (like SCORE and the SBA), and built-in progress tracking.</p>
+  </details>
+
+  <footer>
+    <div class="fb">💎 Clark Essential Solutions</div>
+    <p style="margin-top:6px">Crumb to Coin 🥐→🪙 — From great product to real revenue.</p>
+    <p style="margin-top:6px">Secure payment via PayPal · One-time launch price $19</p>
+  </footer>
+</div>
+<script>
+document.getElementById('unlockBtn').addEventListener('click', function () {
+  var panel = document.getElementById('unlockPanel');
+  panel.classList.add('show');
+  try { localStorage.setItem('c2c-unlocked', '1'); } catch (e) {}
+  panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+try {
+  if (localStorage.getItem('c2c-unlocked') === '1') {
+    document.getElementById('unlockPanel').classList.add('show');
+  }
+} catch (e) {}
+</script>
+</body>
+</html>
