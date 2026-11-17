@@ -64,6 +64,18 @@ summary{font-weight:800;cursor:pointer;font-size:16px}
 details p{color:var(--mut);font-size:15px;margin-top:8px}
 footer{margin-top:48px;text-align:center;color:#9ca3af;font-size:13.5px;border-top:1px solid var(--line);padding-top:22px}
 footer .fb{color:#fff;font-weight:900;font-size:15px}
+.was{text-decoration:line-through;text-decoration-thickness:2px;opacity:.6;font-weight:700}
+.price-amt .was{font-size:36px;color:#f87171;opacity:.9;vertical-align:middle;margin-left:8px}
+.step h3 .was{font-size:15px;color:#f87171;opacity:.85}
+.voices-card{margin-top:16px;border:2px dashed rgba(245,197,66,.55);border-radius:20px;padding:26px 22px;text-align:center;background:rgba(245,197,66,.05)}
+.voices-stars{font-size:30px;color:var(--gold);letter-spacing:6px}
+.voices-main{font-size:19px;font-weight:800;margin-top:10px}
+.voices-sub{color:var(--mut);font-size:14.5px;margin-top:8px}
+.xpromo{margin-top:42px;border:2px solid rgba(245,197,66,.6);border-radius:20px;padding:20px;background:linear-gradient(135deg,rgba(245,197,66,.10),rgba(16,185,129,.08));text-align:center}
+.xpromo .xp-lbl{font-size:12.5px;letter-spacing:2px;font-weight:800;color:var(--mint)}
+.xpromo .xp-title{font-size:20px;font-weight:900;margin-top:6px}
+.xpromo .xp-sub{color:var(--mut);font-size:14.5px;margin-top:6px}
+.xpromo a{display:inline-block;margin-top:12px;background:linear-gradient(90deg,var(--gold),#ffd968);color:#191200;font-weight:900;text-decoration:none;padding:12px 24px;border-radius:999px;font-size:16px}
 @media (max-width:420px){h1{font-size:33px}.hook2{font-size:40px}.combo{font-size:64px}}
 </style>
 </head>
@@ -82,7 +94,7 @@ footer .fb{color:#fff;font-weight:900;font-size:15px}
     <h1><span class="gold">CRUMB</span> TO <span class="green">COIN</span></h1>
     <div class="tagline">From great product to real revenue.</div>
     <p class="sub">An interactive playbook app that walks you from <b style="color:#fff">one great recipe</b> to a <b style="color:#fff">real food business</b> — in 9 stages, step by step, right on your phone.</p>
-    <a class="btn btn-gold" href="#get-started">🚀 Get Started — $19 Launch Price</a>
+    <a class="btn btn-gold" href="#get-started">🚀 Get Started — <span class="was">$29</span> $19 Launch Price</a>
     <div class="small">One-time payment · No subscription · Works on your phone</div>
   </section>
 
@@ -113,10 +125,18 @@ footer .fb{color:#fff;font-weight:900;font-size:15px}
     <div class="feat">🧁 Food makers with a great product and no roadmap for what to do next</div>
   </div>
 
+  <h2>💬 What bakers are <span class="green">saying</span></h2>
+  <!-- TESTIMONIAL SLOT: drop the first buyer's real quote into this card the day it lands. -->
+  <div class="voices-card">
+    <div class="voices-stars">☆ ☆ ☆ ☆ ☆</div>
+    <div class="voices-main">First bakers are working through the playbook now. 🥐</div>
+    <p class="voices-sub">This spot is saved for their real words — the first reviews land here the moment they come in. No made-up quotes, ever.</p>
+  </div>
+
   <h2>💲 Simple <span class="gold">pricing</span></h2>
   <div class="price-card">
     <div class="price-lbl">🚀 LAUNCH PRICE</div>
-    <div class="price-amt">$19</div>
+    <div class="price-amt">$19<span class="was">$29</span></div>
     <div class="price-was">Regular price <s>$29</s> after launch</div>
     <div class="price-note">One-time payment. No subscription, no tiers — the complete 9-stage playbook.</div>
   </div>
@@ -124,10 +144,10 @@ footer .fb{color:#fff;font-weight:900;font-size:15px}
   <h2 id="get-started">🚀 Get <span class="green">started</span> — 3 steps</h2>
   <div class="steps">
     <div class="step">
-      <h3>Step 1 — Pay $19</h3>
-      <p>Tap the button to pay securely through PayPal. It opens PayPal with the $19 launch price already set.</p>
+      <h3>Step 1 — Pay $19 <span class="was">$29</span></h3>
+      <p>Tap the button to pay securely through PayPal. It opens PayPal with the launch price already set — <span class="was">$29</span> <b style="color:#fff">$19</b> today.</p>
       <!-- PAYMENT LINK: PayPal Business payment link for Crumb2Coin $19 (swapped in 2026-11-17, replacing the old PayPal.Me link). -->
-      <a class="btn btn-gold" href="https://www.paypal.com/ncp/payment/VP44N36JHENWG" target="_blank" rel="noopener">💳 Pay $19 with PayPal</a>
+      <a class="btn btn-gold" href="https://www.paypal.com/ncp/payment/VP44N36JHENWG" target="_blank" rel="noopener">💳 Pay <span class="was">$29</span> $19 with PayPal</a>
     </div>
     <div class="step">
       <h3>Step 2 — Unlock your playbook</h3>
@@ -161,17 +181,24 @@ footer .fb{color:#fff;font-weight:900;font-size:15px}
   </details>
   <details>
     <summary>Is this a subscription?</summary>
-    <p>No. It's a one-time $19 launch payment (regular price $29 after launch). Pay once, and the playbook is yours to work through at your own pace.</p>
+    <p>No. It's a one-time launch payment — <span class="was">$29</span> <b style="color:#fff">$19</b> right now, regular price $29 after launch. Pay once, and the playbook is yours to work through at your own pace.</p>
   </details>
   <details>
     <summary>What exactly is inside?</summary>
     <p>9 stages — from proving people will pay, to making it legal, to launching loud and growing — each with step-by-step checklists, pitfalls to avoid, free resources (like SCORE and the SBA), and built-in progress tracking.</p>
   </details>
 
+  <div class="xpromo">
+    <div class="xp-lbl">💎 FROM THE SAME BUILDER</div>
+    <div class="xp-title">The App Pack — 45 Apps, One Pack 📦</div>
+    <p class="xp-sub">Also from Clark Essential Solutions: 45 ready-to-use apps for money, organization, and creating — one pack, one price.</p>
+    <a href="https://qamotech.github.io/apppack/" target="_blank" rel="noopener">See the App Pack — $29 →</a>
+  </div>
+
   <footer>
     <div class="fb">💎 Clark Essential Solutions</div>
     <p style="margin-top:6px">Crumb to Coin 🥐→🪙 — From great product to real revenue.</p>
-    <p style="margin-top:6px">Secure payment via PayPal · One-time launch price $19</p>
+    <p style="margin-top:6px">Secure payment via PayPal · One-time launch price <span class="was">$29</span> $19</p>
   </footer>
 </div>
 <script>
